@@ -1,9 +1,25 @@
 <!doctype html>
 <html ng-app="app">
   <head>
-    <script src=""></script>
+    <!-- core: -->
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-route/angular-route.min.js"></script>
+
+    <!-- ui: -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- app: -->
+    <script src="/src/app.js"></script>
+    <script src="/src/configs/routes.js"></script>
+    <script src="/src/controllers/cliente/cliente-controller.js"></script>
+    <script src="/src/controllers/home/home-controller.js"></script>
+    <script src="/src/services/cliente-service.js"></script>
+
+
   </head>
-  <body ng-controller="appController">
+  <body>
     <div ng-view>
       
     </div>

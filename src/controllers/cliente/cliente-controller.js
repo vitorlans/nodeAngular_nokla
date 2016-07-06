@@ -2,12 +2,16 @@
     'use strict';
 
     angular
-        .module('Module')
-        .controller('ControllerCtrl', ControllerCtrl)
+        .module('app')
+        .controller('clienteController', clienteController)
 
-    function ControllerCtrl(){
-        var vm = this;
+    function clienteController($scope, clienteService){
+        var vm = $scope;
         
+        clienteService.getList(function (data) {
+            vm.json = data.data;
+        });
+
         init();
 
         function init(){
