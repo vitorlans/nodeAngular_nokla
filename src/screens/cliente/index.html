@@ -1,4 +1,21 @@
 <div class="container">
-    VITOOOOOOOOOOR
-    {{json}}
+    <div class="row">
+     <div class="col-sm-4" ng-repeat="cl in json">
+      <div class='container'>
+        <div class="card-deck-wrapper">
+          <div class="card-deck">
+            <div class="card" style="width:320px">
+              <img class="card-img-top" style="width:320px; height:240px"  ng-src="{{ cl.codigo !== 100 ? 'https://randomuser.me/api/portraits/men/' + cl.codigo + '.jpg' : 'https://randomuser.me/api/portraits/women/1.jpg' }}" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">{{cl.nome}}</h4>
+                <p class="card-text">{{cl.dataNascimento | date}}</p>
+                <p class="card-text"><small class="text-muted">{{cl.codigo}}</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
 </div>

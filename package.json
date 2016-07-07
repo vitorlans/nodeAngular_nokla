@@ -17,8 +17,8 @@
   "dependencies": {
     "angular": "^1.5.7",
     "angular-route": "^1.5.7",
-    "bootstrap": "^3.3.6",
+    "bootstrap": "^4.0.0-alpha.2",
     "express": "^4.14.0",
-    "jquery": "^3.0.0"
+    "jquery": "^1.9.1"
   }
 }
